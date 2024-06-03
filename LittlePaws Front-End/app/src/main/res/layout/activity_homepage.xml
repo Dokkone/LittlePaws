@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gif_image"
+            android:layout_width="346dp"
+            android:layout_height="209dp"
+            android:layout_marginTop="28dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/little_paws_promotional_video"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/little_paws_promotional_video" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="404dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/welcome_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome_page" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="218dp"
+            android:layout_height="193dp"
+            android:layout_marginTop="72dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+        android:id="@+id/welcome_copaw"
+        android:layout_width="244dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/italiana"
+        android:gravity="top"
+        android:text="Welcome, Future Adopters!"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_copaw4"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="@font/italiana"
+        android:gravity="top"
+        android:text="The Little Paws: Find your Pawfect Match"
+        android:textColor="#117486"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome_copaw2"
+            android:layout_width="372dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/italiana"
+            android:gravity="top"
+            android:text="Join by Log-in/Register and Adopt your Dogs!"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintTop_toBottomOf="@id/welcome_copaw2">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Login ImageView and Button Container -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/login_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Login ImageView -->
+                    <ImageView
+                        android:id="@+id/loginbg"
+                        android:layout_width="305dp"
+                        android:layout_height="342dp"
+                        android:src="@drawable/login"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Login Button -->
+                    <Button
+                        android:id="@+id/login_button"
+                        android:layout_width="106dp"
+                        android:layout_height="49dp"
+                        android:layout_marginStart="90dp"
+                        android:backgroundTint="#D8EDF5"
+                        android:fontFamily="@font/italiana"
+                        android:text="Login"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@id/loginbg"
+                        app:layout_constraintTop_toBottomOf="@id/loginbg" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Register ImageView and Button Container -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/register_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="8dp">
+
+                    <!-- Register ImageView -->
+                    <ImageView
+                        android:id="@+id/registerbg"
+                        android:layout_width="312dp"
+                        android:layout_height="344dp"
+                        android:src="@drawable/register"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!-- Register Button -->
+                    <Button
+                        android:id="@+id/register_button"
+                        android:layout_width="138dp"
+                        android:layout_height="51dp"
+                        android:layout_marginStart="85dp"
+                        android:layout_marginBottom="25dp"
+                        android:backgroundTint="#AEB0D8"
+                        android:fontFamily="@font/italiana"
+                        android:text="Register"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/registerbg"
+                        app:layout_constraintTop_toBottomOf="@id/registerbg" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="122dp"
+            android:layout_height="168dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/italiana"
+            android:text="Welcome to the Little Paws: Find Your Pawfect Match, your go-to destination for dog adoption in the city! At our veterinarian office, we're dedicated to connecting loving "
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_copaw" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="342dp"
+            android:layout_height="157dp"
+            android:layout_marginStart="28dp"
+            android:fontFamily="@font/italiana"
+            android:text="families with their furry companions. With our user-friendly interface, you can browse through a wide array of adorable pups waiting to find their forever homes. Whether you're looking for a playful companion for outdoor adventures or a cuddly friend to keep you company, we have the pawfect match for you. Join our community of compassionate pet lovers and embark on the journey of unconditional love and companionship. Let the tail-wagging adventures begin!"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

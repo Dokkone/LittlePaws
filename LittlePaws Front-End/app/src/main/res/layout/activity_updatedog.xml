@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3D7CA">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/esc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/addnewdogbtn2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            app:srcCompat="@drawable/updatebg" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="367dp"
+            android:layout_height="82dp"
+            android:fontFamily="@font/italiana"
+            android:text="UPDATE THE INFORMATIONS"
+            android:textAlignment="center"
+            android:textColor="#8667E1"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addnewdogbtn2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dogNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/italiana"
+            android:text="Name of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.214"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/dogNameEditText"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#A774AF"
+            android:ems="10"
+            android:fontFamily="@font/italiana"
+            android:hint="Type here"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogNameLabel" />
+
+        <EditText
+            android:id="@+id/dogBreedEditText"
+            android:layout_width="274dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#A774AF"
+            android:ems="10"
+            android:fontFamily="@font/italiana"
+            android:hint="Type here"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogBreedLabel" />
+
+        <TextView
+            android:id="@+id/dogGenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/italiana"
+            android:text="Gender of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogBreedEditText" />
+
+        <RadioGroup
+            android:id="@+id/dogGenderRadioGroup"
+            android:layout_width="295dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogGenderLabel">
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/italiana"
+                android:text="Female"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="487dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/italiana"
+                android:text="Male"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="201dp"
+                tools:layout_editor_absoluteY="487dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dogLocationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:text="Location of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.231"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogGenderRadioGroup" />
+
+        <EditText
+            android:id="@+id/dogLocationCityEditText"
+            android:layout_width="274dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#A774AF"
+            android:ems="10"
+            android:fontFamily="@font/italiana"
+            android:hint="Type here"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogLocationLabel" />
+
+        <TextView
+            android:id="@+id/dogDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/italiana"
+            android:text="Description of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogLocationCityEditText" />
+
+        <EditText
+            android:id="@+id/dogDescriptionEditText"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#A774AF"
+            android:ems="10"
+            android:fontFamily="@font/italiana"
+            android:hint="Type here"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="10"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogDescriptionLabel" />
+
+        <TextView
+            android:id="@+id/dogProfilePicLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/italiana"
+            android:text="Profile Picture of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogDescriptionEditText" />
+
+        <ImageView
+            android:id="@+id/dogProfilePicImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/woof"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogProfilePicLabel" />
+
+        <Button
+            android:id="@+id/dogProfilePicBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#A774AF"
+            android:fontFamily="@font/italiana"
+            android:text="Select Profile Picture"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogProfilePicImageView" />
+
+        <TextView
+            android:id="@+id/dogImagesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/italiana"
+            android:text="Images of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogProfilePicBtn" />
+
+        <ImageView
+            android:id="@+id/dogImage2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/woof"
+            app:layout_constraintEnd_toStartOf="@+id/dogImage3"
+            app:layout_constraintStart_toEndOf="@+id/dogImage1"
+            app:layout_constraintTop_toBottomOf="@+id/dogImagesLabel" />
+
+        <ImageView
+            android:id="@+id/dogImage1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/woof"
+            app:layout_constraintEnd_toStartOf="@+id/dogImage2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogImagesLabel" />
+
+        <ImageView
+            android:id="@+id/dogImage3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/woof"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dogImage2"
+            app:layout_constraintTop_toBottomOf="@+id/dogImagesLabel" />
+
+        <Button
+            android:id="@+id/dogImagesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="#A774AF"
+            android:fontFamily="@font/italiana"
+            android:text="Import Images"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogImage3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/dogBreedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/italiana"
+            android:text="Breed of the Dog"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogNameEditText" />
+
+        <Button
+            android:id="@+id/addDogBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="28dp"
+            android:backgroundTint="#A774AF"
+            android:fontFamily="@font/italiana"
+            android:text="Update Dog"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.683"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogImagesBtn"
+            app:layout_constraintVertical_bias="0.029" />
+
+        <ImageView
+            android:id="@+id/bottomImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/files"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dogImagesBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

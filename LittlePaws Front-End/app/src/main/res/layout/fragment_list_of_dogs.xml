@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF6F5"
+    tools:context=".ListOfDogs">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="376dp"
+            android:layout_height="296dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.473"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_of_friends" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="256dp"
+            android:layout_height="61dp"
+            android:fontFamily="@font/italiana"
+            android:text="Find your Pawfect Dog to Adopt it!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <ImageView
+            android:id="@+id/dogphoto1"
+            android:layout_width="107dp"
+            android:layout_height="202dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13"
+            app:srcCompat="@drawable/golden_retriever_cropped" />
+
+        <ImageView
+            android:id="@+id/dogphoto2"
+            android:layout_width="156dp"
+            android:layout_height="222dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14"
+            app:srcCompat="@drawable/dog4" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <Button
+            android:id="@+id/adoptbtn"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+        <Button
+            android:id="@+id/adoptbtn2"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/namedog1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView13"
+            app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+        <TextView
+            android:id="@+id/namedog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <!-- here start !-->
+        <ImageView
+            android:id="@+id/dogphoto3"
+            android:layout_width="160dp"
+            android:layout_height="223dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15"
+            app:srcCompat="@drawable/dog6" />
+
+        <ImageView
+            android:id="@+id/dogphoto4"
+            android:layout_width="164dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16"
+            app:srcCompat="@drawable/dog5" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView13"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView14"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <Button
+            android:id="@+id/adoptbtn3"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+        <Button
+            android:id="@+id/adoptbtn4"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+        <TextView
+            android:id="@+id/namedog3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView15"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+        <TextView
+            android:id="@+id/namedog4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView16"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+        <!-- here start !-->
+        <ImageView
+            android:id="@+id/dogphoto5"
+            android:layout_width="159dp"
+            android:layout_height="239dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17"
+            app:srcCompat="@drawable/dog8" />
+
+        <ImageView
+            android:id="@+id/dogphoto6"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18"
+            app:srcCompat="@drawable/dog7" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="181dp"
+            android:layout_height="271dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView17"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView16"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/listofdogbg" />
+
+        <Button
+            android:id="@+id/adoptbtn5"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <Button
+            android:id="@+id/adoptbtn6"
+            android:layout_width="84dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#000000"
+            android:fontFamily="@font/italiana"
+            android:text="View"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:iconPadding="8dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+        <TextView
+            android:id="@+id/namedog5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <TextView
+            android:id="@+id/namedog6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/italiana"
+            android:hint="Name Dog"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView18"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
